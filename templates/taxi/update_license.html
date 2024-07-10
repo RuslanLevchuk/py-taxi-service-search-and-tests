@@ -3,11 +3,12 @@
 {% block content %}
       <div class="content">
         <div class="form-container">
-          <h2>Add a new Driver</h2  >
-          <form method="post" novalidate>
+          <h2>Update License </h2>
+          <h3>Driver {{ object.username }}</h3>           
+          <form method="post">
             {% csrf_token %}
             {{ form }}
-            <br>
+            <br>  
             <button type="submit">Save</button>
           </form>
         </div>
